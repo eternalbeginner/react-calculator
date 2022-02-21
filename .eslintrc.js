@@ -11,6 +11,9 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
   ],
+  parserOptions: {
+    ecmaVersion: 2020,
+  },
   plugins: ['react'],
   rules: {
     'import/no-extraneous-dependencies': [
@@ -32,7 +35,11 @@ module.exports = {
   settings: {
     'import/resolver': {
       alias: {
-        map: [],
+        map: [
+          ['@components', './src/components'],
+          ['@reducer', './src/reducer'],
+          ['@utils', './src/utils'],
+        ],
         extensions: ['.js', '.jsx'],
       },
     },
