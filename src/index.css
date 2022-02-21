@@ -1,0 +1,29 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(58, 58, 58);
+  font-family: 'Consolas';
+  font-size: 20px;
+}
+
+a {
+  color: rgb(0, 107, 229);
+  text-decoration: none;
+}
+
+#root {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
