@@ -1,33 +1,30 @@
+import Cta from './components/Cta';
+import Display from './components/Display';
+
 function App() {
 	return (
 		<section className="calc">
-			<div className="calc__display">
-				<div className="display__saved">
-					<span className="saved__num">1000</span>
-					<span className="saved__operand">*</span>
-				</div>
-				<div className="display_current">100</div>
-			</div>
-			<div className="calc__cta">
-				<button className="cta__button">AC</button>
-				<button className="cta__button">DEL</button>
-				<button className="cta__button">%</button>
-				<button className="cta__button">7</button>
-				<button className="cta__button">8</button>
-				<button className="cta__button">9</button>
-				<button className="cta__button">/</button>
-				<button className="cta__button">4</button>
-				<button className="cta__button">5</button>
-				<button className="cta__button">6</button>
-				<button className="cta__button">*</button>
-				<button className="cta__button">1</button>
-				<button className="cta__button">2</button>
-				<button className="cta__button">3</button>
-				<button className="cta__button">-</button>
-				<button className="cta__button">0</button>
-				<button className="cta__button">=</button>
-				<button className="cta__button">+</button>
-			</div>
+			<Display />
+			<Cta>
+				<Cta.Operation value="clr" />
+				<Cta.Operation value="del" />
+				<Cta.Operand value="mod" />
+				<Cta.Num value="7" />
+				<Cta.Num value="8" />
+				<Cta.Num value="9" />
+				<Cta.Operand value="div" />
+				<Cta.Num value="4" />
+				<Cta.Num value="5" />
+				<Cta.Num value="6" />
+				<Cta.Operand value="mul" />
+				<Cta.Num value="1" />
+				<Cta.Num value="2" />
+				<Cta.Num value="3" />
+				<Cta.Operand value="sub" />
+				<Cta.Num value="0" />
+				<Cta.Operation value="equ" />
+				<Cta.Operand value="add" />
+			</Cta>
 		</section>
 	);
 }
