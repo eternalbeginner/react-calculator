@@ -1,5 +1,5 @@
-import Current from './Current';
-import Saved from './Saved';
+import Current from '@components/Display/Current';
+import Saved from '@components/Display/Saved';
 
 function Display() {
   return (

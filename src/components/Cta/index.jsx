@@ -1,6 +1,6 @@
-import Num from './Num';
-import Operand from './Operand';
-import Operation from './Operation';
+import Num from '@components/Cta/Num';
+import Operand from '@components/Cta/Operand';
+import Operation from '@components/Cta/Operation';
 
 function Cta({ ...props }) {
   return <div className="calc__cta">{props.children}</div>;
