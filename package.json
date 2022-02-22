@@ -1,0 +1,18 @@
+{
+	"name": "react-calculator",
+	"description": "Simple calculator built with React",
+	"private": true,
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"@vitejs/plugin-react": "^1.2.0",
+		"vite": "^2.8.4"
+	},
+	"scripts": {
+		"build": "vite build --config ./config/vite.config.js",
+		"dev": "vite --config ./config/vite.config.js",
+		"preview": "vite preview --config ./config/vite.config.js"
+	}
+}
