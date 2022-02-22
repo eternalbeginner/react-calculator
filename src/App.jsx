@@ -1,5 +1,5 @@
-import Cta from './components/Cta';
-import Display from './components/Display';
+import Cta from '@components/Cta';
+import Display from '@components/Display';
 
 function App() {
   return (
