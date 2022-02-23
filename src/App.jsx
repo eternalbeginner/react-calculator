@@ -1,13 +1,15 @@
 import Cta from '@components/Cta';
 import Display from '@components/Display';
 
+import { StyledContainer } from '@sources/App.style';
+
 function App() {
   return (
-    <section className="calc">
+    <StyledContainer>
       <Display />
       <Cta>
-        <Cta.Operation value="clr" />
-        <Cta.Operation value="del" />
+        <Cta.Operator value="clr" colSpan={2} />
+        <Cta.Operator value="del" />
         <Cta.Operand value="mod" />
         <Cta.Num value="7" />
         <Cta.Num value="8" />
@@ -22,10 +24,10 @@ function App() {
         <Cta.Num value="3" />
         <Cta.Operand value="sub" />
         <Cta.Num value="0" />
-        <Cta.Operation value="equ" />
+        <Cta.Operator value="equ" colSpan={2} />
         <Cta.Operand value="add" />
       </Cta>
-    </section>
+    </StyledContainer>
   );
 }
 

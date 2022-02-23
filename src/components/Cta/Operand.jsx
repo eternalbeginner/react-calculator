@@ -1,8 +1,8 @@
-import operands from '@constants/operands';
 import Button from '@components/Button';
+import operands from '@constants/operands';
 
 function Operand({ value }) {
-  return <Button className={['cta__operand']}>{operands[value.toLowerCase()]}</Button>;
+  return <Button>{operands[value.toLowerCase()]}</Button>;
 }
 
 export default Operand;

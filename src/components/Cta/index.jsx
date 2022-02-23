@@ -1,13 +1,15 @@
 import Num from '@components/Cta/Num';
 import Operand from '@components/Cta/Operand';
-import Operation from '@components/Cta/Operation';
+import Operator from '@components/Cta/Operator';
+
+import { StyledCta } from '@components/Cta/index.style';
 
 function Cta({ ...props }) {
-  return <div className="calc__cta">{props.children}</div>;
+  return <StyledCta>{props.children}</StyledCta>;
 }
 
 Cta.Num = Num;
 Cta.Operand = Operand;
-Cta.Operation = Operation;
+Cta.Operator = Operator;
 
 export default Cta;

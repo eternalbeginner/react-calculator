@@ -1,11 +1,10 @@
-function Button({ className, onClick, ...props }) {
-  className = Array.isArray(className) ? className.join(' ') : className;
-  className = ['button', className].join(' ').trim();
+import { StyledButton } from '@components/Button/index.style';
 
+function Button({ ...props }) {
   return (
-    <button type="button" className={className} onClick={onClick}>
+    <StyledButton type="button" {...props}>
       {props.children}
-    </button>
+    </StyledButton>
   );
 }
 
