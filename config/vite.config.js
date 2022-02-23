@@ -9,6 +9,7 @@ export default defineConfig({
     alias: {
       '@components': resolve(__dirname, '../src/components'),
       '@constants': resolve(__dirname, '../src/constants'),
+      '@sources': resolve(__dirname, '../src'),
     },
     extensions: ['.js', '.jsx'],
   },
